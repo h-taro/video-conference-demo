@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		506CC4D1299926D300B16F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4D0299926D300B16F56 /* AppDelegate.swift */; };
 		506CC4D3299926D300B16F56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4D2299926D300B16F56 /* SceneDelegate.swift */; };
-		506CC4D5299926D300B16F56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4D4299926D300B16F56 /* ViewController.swift */; };
 		506CC4D8299926D300B16F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506CC4D6299926D300B16F56 /* Main.storyboard */; };
 		506CC4DA299926E000B16F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 506CC4D9299926E000B16F56 /* Assets.xcassets */; };
 		506CC4DD299926E000B16F56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 506CC4DB299926E000B16F56 /* LaunchScreen.storyboard */; };
+		506CC4E7299927F400B16F56 /* ConferenceVideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4E6299927F400B16F56 /* ConferenceVideoController.swift */; };
+		506CC4E92999297500B16F56 /* ConferenceVideoSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4E82999297500B16F56 /* ConferenceVideoSessionsViewController.swift */; };
+		506CC4EB299930E000B16F56 /* ConferenceVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4EA299930E000B16F56 /* ConferenceVideoCell.swift */; };
+		506CC4ED2999349B00B16F56 /* TitleSupplementaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 506CC4EC2999349B00B16F56 /* TitleSupplementaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		506CC4CD299926D300B16F56 /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		506CC4D0299926D300B16F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		506CC4D2299926D300B16F56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		506CC4D4299926D300B16F56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		506CC4D7299926D300B16F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		506CC4D9299926E000B16F56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		506CC4DC299926E000B16F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		506CC4DE299926E000B16F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		506CC4E6299927F400B16F56 /* ConferenceVideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceVideoController.swift; sourceTree = "<group>"; };
+		506CC4E82999297500B16F56 /* ConferenceVideoSessionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceVideoSessionsViewController.swift; sourceTree = "<group>"; };
+		506CC4EA299930E000B16F56 /* ConferenceVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConferenceVideoCell.swift; sourceTree = "<group>"; };
+		506CC4EC2999349B00B16F56 /* TitleSupplementaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSupplementaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,34 @@
 		506CC4CF299926D300B16F56 /* demo */ = {
 			isa = PBXGroup;
 			children = (
+				506CC4E5299927DD00B16F56 /* Screens */,
+				506CC4E42999277D00B16F56 /* Resources */,
+			);
+			path = demo;
+			sourceTree = "<group>";
+		};
+		506CC4E42999277D00B16F56 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				506CC4D0299926D300B16F56 /* AppDelegate.swift */,
 				506CC4D2299926D300B16F56 /* SceneDelegate.swift */,
-				506CC4D4299926D300B16F56 /* ViewController.swift */,
 				506CC4D6299926D300B16F56 /* Main.storyboard */,
 				506CC4D9299926E000B16F56 /* Assets.xcassets */,
 				506CC4DB299926E000B16F56 /* LaunchScreen.storyboard */,
 				506CC4DE299926E000B16F56 /* Info.plist */,
 			);
-			path = demo;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		506CC4E5299927DD00B16F56 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				506CC4E6299927F400B16F56 /* ConferenceVideoController.swift */,
+				506CC4E82999297500B16F56 /* ConferenceVideoSessionsViewController.swift */,
+				506CC4EA299930E000B16F56 /* ConferenceVideoCell.swift */,
+				506CC4EC2999349B00B16F56 /* TitleSupplementaryView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +163,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				506CC4D5299926D300B16F56 /* ViewController.swift in Sources */,
+				506CC4E92999297500B16F56 /* ConferenceVideoSessionsViewController.swift in Sources */,
+				506CC4E7299927F400B16F56 /* ConferenceVideoController.swift in Sources */,
 				506CC4D1299926D300B16F56 /* AppDelegate.swift in Sources */,
+				506CC4ED2999349B00B16F56 /* TitleSupplementaryView.swift in Sources */,
 				506CC4D3299926D300B16F56 /* SceneDelegate.swift in Sources */,
+				506CC4EB299930E000B16F56 /* ConferenceVideoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,7 +317,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP5AQZ56FT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = demo/Info.plist;
+				INFOPLIST_FILE = demo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +330,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +348,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FP5AQZ56FT;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = demo/Info.plist;
+				INFOPLIST_FILE = demo/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +361,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
